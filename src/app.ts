@@ -47,10 +47,10 @@ import graphApp from "./modules/graph.js";
       for await (const ev of events) {
         if (ev.event === "on_chat_model_stream") {
           // 思考链
-          const reason = ev.data.chunk.additional_kwargs.reasoning_content;
-          if (reason) {
-            process.stdout.write("\x1b[33m" + reason + "\x1b[0m");
-          }
+          // const reason = ev.data.chunk.additional_kwargs.reasoning_content;
+          // if (reason) {
+          //   process.stdout.write("\x1b[33m" + reason + "\x1b[0m");
+          // }
           // 回答
           const content = ev.data.chunk.content;
           if (content) {

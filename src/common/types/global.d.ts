@@ -5,6 +5,8 @@ declare global {
       QWEN_BASE_URL: string;
       KIMI_API_KEY: string;
       KIMI_BASE_URL: string;
+      API_KEY: string;
+      BASE_URL: string;
     }
   }
 }

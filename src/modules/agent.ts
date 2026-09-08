@@ -5,8 +5,8 @@ import tools from "../tools/index.js";
 const model = new ChatOpenAI({
   model: "qwen3.8-flash",
   configuration: {
-    apiKey: process.env.QWEN_API_KEY,
-    baseURL: process.env.QWEN_BASE_URL,
+    apiKey: process.env.API_KEY,
+    baseURL: process.env.BASE_URL,
   },
 });
 
